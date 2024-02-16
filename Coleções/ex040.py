@@ -22,17 +22,3 @@ print(f"\nTodos os alunos de ambos os cursos--> {alunos_mysql.union(alunos_pytho
 print(f"Alunos que participam de ambos os cursos--> {alunos_mysql.intersection(alunos_python)}")
 print(f"Alunos que participam apenas do curso de MySQL--> {alunos_mysql.difference(alunos_python)}")
 print(f"Alunos que participam apenas do curso de Python--> {alunos_python.difference(alunos_mysql)}")
-
-meu_amor = 'Samylle'
-if meu_amor in alunos_mysql:
-    print(f'\n--------------------❤-----------------------')
-    print(f"Meu único amor na face da terra: {meu_amor}")
-    print("---------------------------------------------")
-elif meu_amor in alunos_python:
-    print(f'\n--------------------❤-----------------------')
-    print(f"Meu único amor na face da terra: {meu_amor}")
-    print("---------------------------------------------")
-elif meu_amor in alunos_python and meu_amor in alunos_mysql:
-    print(f'\n--------------------❤-----------------------')
-    print(f"Meu único amor na face da terra: {alunos_python.difference(alunos_mysql)}")
-    print("---------------------------------------------")
