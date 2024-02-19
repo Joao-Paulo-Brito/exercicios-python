@@ -15,4 +15,3 @@ Fahrenheit = float(Celcius*(9/5)+32)
 # Saída de dados
 print("\n CONVERTENDO... \n")
 print(f"O valor de {Celcius}°C em Fahrenheit é igual a: {Fahrenheit}°F")
-
