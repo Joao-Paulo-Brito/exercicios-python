@@ -1,6 +1,6 @@
 """
 Exercício 039:
-    Faça um vetor onde o usuário vai digitar o tamanho dele, os valores, e depois mostre os valores pares, o maior
+    Faça um vetor onde o usuário vai digitar o tamanho do vetor, os valores, e depois mostre os valores pares, o maior
 valor, o menor valor e a soma de todos os valores.
 """
 # Variáveis
