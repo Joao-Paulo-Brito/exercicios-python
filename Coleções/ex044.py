@@ -30,4 +30,6 @@ for cont in range(tamanho):
     lista.append(input(f"Digite o {cont+1}° elemento: "))
 
 # Saída de dados
+print(f"\nLista original: {lista}")
 print(f"\nInvertendo ordem da lista: {metade()}")
+
