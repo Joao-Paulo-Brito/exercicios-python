@@ -43,6 +43,7 @@ Requsitos:
 """
 
 
+# Funções
 def verificar_saldo():
     return f"\nSeu saldo atual: R${saldo}\n"
 
@@ -75,18 +76,46 @@ while resposta != 4:
 
     match resposta:
         case 1:
+
             print(verificar_saldo())
+
         case 2:
-            print("Qual é a quantia que você quer depositar ?")
-            quantia = float(input())
 
-            saldo = depositar_dinheiro(saldo, quantia)
-            print(f"\nDeposito de R${quantia}0. Operação bem sucedida!\n")
+            quantia = float(-1)
+
+            while quantia < 0:
+
+                print("\nQual é a quantia que você quer depositar ?")
+                quantia = float(input())
+
+                # Validação
+                if quantia >= 0:
+
+                    saldo = depositar_dinheiro(saldo, quantia)
+                    print(f"\nDeposito de R${quantia}0. Operação bem sucedida!\n")
+
+                else:
+
+                    print("\nValor inválido! Tente novamente\n")
+
         case 3:
-            print("Qual é a quantia de que você quer sacar ?")
-            quantia = float(input())
 
-            saldo = sacar_dinheiro(saldo, quantia)
-            print(f"Saque de R${quantia}0 realizado. Operação bem sucedida!")
+            quantia = float(-1)
+
+            while quantia < 0 or quantia > saldo:
+
+                print("\nQual é a quantia de que você quer sacar ?")
+                quantia = float(input())
+
+                if quantia >= 0 and quantia <= saldo:
+
+                    saldo = sacar_dinheiro(saldo, quantia)
+                    print(f"\nSaque de R${quantia}0 realizado. Operação bem sucedida!")
+
+                else:
+
+                    print("\nValor inválido ou valor de saque maior que o saldo, tente novamente!\n")
+
         case 4:
+
             print("\nSAINDO...\n")
