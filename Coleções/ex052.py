@@ -41,27 +41,38 @@ for linha in matriz:
     Exercício 3:
     Preencha uma matriz 5x5, sendo um desses elementos um "X", depois diga a posição da linha e da coluna desse elemeto,
 caso o x não esteja na matriz, digite "X não encontrado"
-"""
 matriz = []
-posicao = []
-cont = int(0)
+posicao = None
 
 print("Matriz 5x5")
 for i in range(5):
     linha = []
     for j in range(5):
         linha.append(input("Digite o elemento: "))
-        if cont > 0:
-            print("\nNão pode digitar o x mais de uma vez!\n")
-            break
-        elif "x" in linha:
-            posicao.append(i, j)
-            cont += 1
+        if linha[j].lower() == "x":
+            if posicao is not None:
+                print("\nO X não pode ser digitado mais de uma vez\n")
+                linha[j] = 0
+            else:
+                posicao = (i, j)
 
+    print()
     matriz.append(linha)
 
-for lista in matriz:
-    for numero in lista:
-        if numero.lower() == "x":
-            print(f"X encontrado ! está na posição: {posicao}")
+# Saída de dados
+for linha in matriz:
+    print(linha)
 
+if posicao is not None:
+    print(f"\nO X está na posição: {posicao}")
+else:
+    print("\nO X não foi encontrado")
+
+    Exercício 4:
+    Leia uma matriz de 3x3 elementos. cada elemento do vetor terá o valor de 1 até 9 usando list comprehension.
+
+elementos = [[coluna + 1 + linha * 3 for coluna in range(3)] for linha in range(3)]
+for linha in elementos:
+    print(linha)
+
+"""
