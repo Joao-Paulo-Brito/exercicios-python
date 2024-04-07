@@ -75,4 +75,11 @@ elementos = [[coluna + 1 + linha * 3 for coluna in range(3)] for linha in range(
 for linha in elementos:
     print(linha)
 
+    Exercício 5:
+     Crie uma list comprehension que gere a sequência de Fibonacci até um determinado número n, mas inclua apenas os
+números ímpares dessa sequência na lista resultante.
+
+    Exercício 6:
+    Use uma list comprehension para encontrar todos os números primos entre 2 e 50. Dica: Você pode precisar de uma
+expressão aninhada ou uma função auxiliar.
 """
