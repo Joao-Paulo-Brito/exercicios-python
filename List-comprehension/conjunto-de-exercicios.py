@@ -53,4 +53,28 @@ contrário.
     R=
 numeros = {chave: True if chave % 2 == 0 else False for chave in range(1, 11)}
 print(numeros)
+
+    Exercício 7:
+    Dada uma lista de palavras, crie um dicionário onde as chaves são as palavras e os valores são o comprimento dessas
+palavras.
+    R =
+palavras = ["Pão", "açucar", "pimenta", "tomate", "abobora", "pepino", "café"]
+comprimento = {chave: valor for chave in palavras for valor in range(len(chave)+1)}
+print(comprimento)
+
+    Exercício 8:
+    Dada uma lista de números, crie um dicionário onde as chaves são os números e os valores são True se o número for
+primo e False caso contrário.
+
+    Exercício 9:
+    Dada uma lista de strings, crie um dicionário onde as chaves são as palavras e os valores são o número de
+ocorrências dessa palavra na lista.
+
+    Exercício 10:
+    Dado um dicionário onde as chaves são nomes de produtos e os valores são seus preços, crie um novo dicionário onde
+as chaves são os nomes dos produtos com desconto de 10% e os valores são os preços com desconto aplicado.
+
+    Exercício 11:
+    Dada uma lista de tuplas representando pares (chave, valor), crie um dicionário a partir desses pares.
 """
+
