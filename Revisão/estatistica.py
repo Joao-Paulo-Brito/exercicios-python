@@ -188,4 +188,5 @@ for chave, valor in moda.items():
     if valor == max(moda.values()):
         print(f"\nModa: {chave}")
 
+
 """
