@@ -155,13 +155,88 @@ print(f"Maior número: {maior}")
 print(f"Menor número: {menor}")
 
 
-9. Faça um programa que calcule a soma dos números de 1 a 100.
-10. Escreva um programa que imprima os números primos de 1 a 100.
-11. Crie um programa que ordene uma lista de números.
-12. Escreva uma função que inverta uma string.
-13. Escreva um programa que imprima os primeiros 20 termos da sequência de Fibonacci.
-14. Faça um programa que imprima os números pares de 0 a 100.
-15. Crie um programa que calcule o fatorial de um número.
+9) Faça um programa que calcule a soma dos números de 1 a 100.
+    R=
+soma = int(0)
+for cont in range(1, 100):
+    soma += cont
+
+# Saída de dados
+print(f"Soma dos números de 1 até 100: {soma}")
+
+
+10) Escreva um programa que imprima os números primos de 1 a 100.
+    R=
+
+
+11) Crie um programa que ordene uma lista de números.
+    R=
+# Módulo random
+import random
+
+# Criando lista e embaralhando seus valores
+lista = [numero for numero in range(1, 31)]
+random.shuffle(lista)
+print(f"Lista: {lista}\n")
+
+# Ordenando
+lista.sort()
+print(f"Lista ordenada: {lista}")
+
+12) Escreva uma função que inverta uma string.
+    R=
+
+
+def invert(frase):
+    frase = list(frase)
+    frase.reverse()
+    frase = ' '.join(frase)
+    return frase
+
+
+print(invert('João Paulo'))
+print(invert('Samylle'))
+print(invert('Alexandre'))
+print(invert('Samuel'))
+
+
+13) Escreva um programa que imprima os primeiros 20 termos da sequência de Fibonacci.
+    R=
+fibornacci = [0, 1]
+
+for cont in range(1, 20):
+    if cont == fibornacci[-1] + fibornacci[-2]:
+        fibornacci.append(cont)
+    else:
+        pass
+
+print(fibornacci)
+
+
+14) Faça um programa que imprima os números pares de 0 a 100.
+    R=
+pares = [par for par in range(1, 100) if par % 2 == 0]
+print(f"Números pares: {pares}")
+
+15) Crie um programa que calcule o fatorial de um número.
+    R=
+
+
+def fatorial_calc(numero):
+    fatorial = int(1)
+
+    for cont in range(1, numero+1):
+        fatorial *= cont
+
+    return fatorial
+
+
+print(fatorial_calc(5))
+print(fatorial_calc(7))
+print(fatorial_calc(1))
+print(fatorial_calc(3))
+
+
 16. Escreva um programa que imprima os números de 1 a 10.
 17. Escreva uma função que calcule o quadrado de um número.
 18. Faça uma função que receba **kwargs e imprima cada chave e valor.
@@ -190,3 +265,16 @@ entre as duas listas.
 Faça um programa que leia uma frase do usuário e conte quantas palavras diferentes existem na frase.
 Escreva um programa que simule o lançamento de um dado de seis lados, imprimindo o resultado obtido.
 """
+# Módulo random
+import random
+
+# Criando lista e embaralhando seus valores
+lista = [numero for numero in range(1, 31)]
+random.shuffle(lista)
+print(f"Lista: {lista}\n")
+
+# Ordenando
+lista.sort()
+print(f"Lista ordenada: {lista}")
+
+
