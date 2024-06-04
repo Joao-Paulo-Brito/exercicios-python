@@ -189,4 +189,38 @@ for chave, valor in moda.items():
         print(f"\nModa: {chave}")
 
 
+4) O desvio-padrão do conjunto {2, 4, 8, 12, 16} é igual a aproximadamente:
+A) 6,0
+
+B) 6,2
+
+C) 6,4
+
+D) 6,6
+
+E) 6,9
+
+R=
+import math
+
+
+# Cálculo da variáncia
+def variacia(*args):
+    media = sum(args)/len(args)
+    print(f"media: {media}")
+    variancia = []
+
+    for dado in args:
+        variancia.append((dado - media) ** 2)
+
+    variancia = sum(variancia)/len(variancia) - 1
+
+    return variancia
+
+
+dados = [2, 4, 8, 12, 16]
+desvio_padrao = math.sqrt(variacia(*dados))
+
+print(desvio_padrao)
+
 """
